@@ -4,9 +4,11 @@ $(document).ready(function () {
         console.log(this);
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
-
+        /* setup local storage */
         localStorage.setItem(time, text);
     })
+
+    /* setup time blocks */
     $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
@@ -18,6 +20,7 @@ $(document).ready(function () {
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
+    /* Define hourTracker function */
     function hourTracker() {
         var currentHour = moment().hour();
 
