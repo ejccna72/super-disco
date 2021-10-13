@@ -30,4 +30,4 @@ THEN the saved events persist
 
 ```
 ## Screenshot
-![image](./assets/images/screen.jpg)
+![image](./assets/images/screen2.jpg)
